@@ -3,7 +3,11 @@ public class SIAKAD13 {
     public static void main(String[] args) {
         Scanner input13 = new Scanner(System.in);
 
-        int[][] nilai = new int[4][3];
+        System.out.println("Masukkan jumlah mahasiswa");
+        int jumlahMahasiswa = input13.nextInt();
+        System.out.println("Masukkan jumlah mata kuliah");
+        int jumlahMatkul = input13.nextInt();
+        int[][] nilai = new int[jumlahMahasiswa][jumlahMatkul];
 
         for (int i = 0; i < nilai.length; i++) {
             System.out.print("Input nilai mahasiswa ke-" + (i+1));
